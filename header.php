@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <?php wp_head(); ?>
-    TESSSt
+    
 </head>
 <body>
     
