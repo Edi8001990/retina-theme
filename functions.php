@@ -21,4 +21,22 @@ function load_js(){
 }
 
 add_action('wp_enqueue_scripts' , 'load_js');
+
+
+
+// Custom SMTP mailing for Contact Form 7...
+
+function custom_mailer($php_mail){
+    $php_mail->SetFrom('selected-------@------mail.com', 'Mateusz T'); // Type correct email address
+    $php_mail->Host = 'smtp.gmail.com';
+    $php_mail->Port = 465;
+    $php_mail->SMTPAuth = true;
+    $php_mail->SMTPSecure = 'ssl';
+    $php_mail->Username = SMTP_LOGIN; // needs to be specified at wp-config.php file
+    $php_mail->Password = SMTP_PASSWORD; // needs to be specified at wp-config.php file
+    $php_mail->IsSMTP();
+}
+
+add_action( 'phpmailer_init', 'custom_mailer');
+
 ?>
