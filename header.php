@@ -11,3 +11,22 @@
 </head>
 <body>
     
+<header>
+
+<!-- Custom logo -->
+
+<?php
+    if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }
+?>
+
+<!-- Main Menu -->
+    <?php
+            wp_nav_menu( 
+                array(
+                    'theme-location' => 'top-menu',
+                )
+             )
+    ?>
+</header>
