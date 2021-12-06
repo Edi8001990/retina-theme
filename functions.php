@@ -28,9 +28,20 @@ function load_js(){
 
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrap');
+
 }
 
 add_action('wp_enqueue_scripts' , 'load_js');
+
+
+// Load Font Awesome icons for the footer 
+
+function load_font_awesome(){
+    wp_enqueue_script('fascript', 'https://kit.fontawesome.com/a076d05399.js');
+}
+
+add_action('wp_enqueue_scripts' , 'load_font_awesome');
+
 
 
 // Theme Options
@@ -65,35 +76,19 @@ function register_my_menus() {
         'top-menu' => 'Main Menu',
         'footer-menu-1' => __( 'Footer Menu Block 1' ),
         'footer-menu-2' => __( 'Footer Menu Block 2' ),
-        'footer-menu-3' => __( 'Footer Menu Block 3' )
+        'footer-menu-3' => __( 'Footer Menu Block 3' ),
+        'social-media-menu' => __( 'Social Media Menu' )
        )
      );
    }
    add_action( 'init', 'register_my_menus' );
 
-// function register_my_menus(){
-// register_nav_menus(
-//     array(
-//         'top-menu' => 'Main Menu',
-//         'footer-menu-1' => __('Footer Menu Block 1'),
-//         'footer-menu-2' => 'Footer Menu Block 2',
-//         'footer-menu-3' => 'Footer Menu Block 3',
-//     )
-// );
-// }
-// add_action('init', 'register_my_menus');
+
 
 
 // Register Sidebars
 
-// function my_sidebars(){
-//     register_sidebar(
-//         array(
-//             'name' => 'Page Sidebar',
-//             'id' => 'page-sidebar',
-//         )
-//     )
-// }
+
 
 add_action('widgets-init', 'my-sidebars');
 
