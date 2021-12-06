@@ -1,3 +1,72 @@
-p{
-    color: red !important;
+/* Footer styling */
+
+.footer{
+    padding:30px 0px;
+    border-top: 5px solid #259de0;
+    background-color: #323232;
+}
+
+.footer-site-name{
+    color: #259de0;
+}
+
+.footer-items div .menu li{
+    list-style: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.footer-items div .menu{
+    padding-left: 0;
+}
+
+.footer-items div .menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.social-media-menu-name{
+    color: #259de0;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 25px;
+}
+
+.social-media-icons {
+    width: 20%;
+}
+
+.footer-items .menu-follow-us-container .menu {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-items .menu-follow-us-container
+.menu li a i{
+    font-size: 20px;
+}
+
+
+
+.footer-logo {
+    position: relative;
+    right: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-logo .custom-logo-link .custom-logo{
+    display: inline;
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-company-info{
+    color: white;
+    font-size: 11px;
+    margin-top: 30px;
 }

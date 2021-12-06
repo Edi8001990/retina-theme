@@ -78,7 +78,7 @@ function register_my_menus() {
         'footer-menu-1' => __( 'Footer Menu Block 1' ),
         'footer-menu-2' => __( 'Footer Menu Block 2' ),
         'footer-menu-3' => __( 'Footer Menu Block 3' ),
-        'social-media-menu' => __( 'Social Media Menu' )
+        'social-media-menu' => __( 'Follow Us' )
        )
      );
    }
