@@ -47,6 +47,7 @@ add_action('wp_enqueue_scripts' , 'load_font_awesome');
 // Theme Options
 add_theme_support('menus');
 add_theme_support('widgets');
+add_theme_support('post-thumbnails');
 
 
 
@@ -73,7 +74,7 @@ add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 function register_my_menus() {
     register_nav_menus(
       array(
-        'top-menu' => 'Main Menu',
+        'top-menu' => __( 'Main Menu Header'),
         'footer-menu-1' => __( 'Footer Menu Block 1' ),
         'footer-menu-2' => __( 'Footer Menu Block 2' ),
         'footer-menu-3' => __( 'Footer Menu Block 3' ),
