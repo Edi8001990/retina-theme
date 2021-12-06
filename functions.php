@@ -35,6 +35,8 @@ add_action('wp_enqueue_scripts' , 'load_js');
 
 // Theme Options
 add_theme_support('menus');
+add_theme_support('widgets');
+
 
 
 // Main menu LOGO
@@ -55,14 +57,45 @@ function themename_custom_logo_setup() {
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
 
-// Main Menu
+// Menus
 
-register_nav_menus(
-    array(
+function register_my_menus() {
+    register_nav_menus(
+      array(
         'top-menu' => 'Main Menu',
-    )
-);
+        'footer-menu-1' => __( 'Footer Menu Block 1' ),
+        'footer-menu-2' => __( 'Footer Menu Block 2' ),
+        'footer-menu-3' => __( 'Footer Menu Block 3' )
+       )
+     );
+   }
+   add_action( 'init', 'register_my_menus' );
 
+// function register_my_menus(){
+// register_nav_menus(
+//     array(
+//         'top-menu' => 'Main Menu',
+//         'footer-menu-1' => __('Footer Menu Block 1'),
+//         'footer-menu-2' => 'Footer Menu Block 2',
+//         'footer-menu-3' => 'Footer Menu Block 3',
+//     )
+// );
+// }
+// add_action('init', 'register_my_menus');
+
+
+// Register Sidebars
+
+// function my_sidebars(){
+//     register_sidebar(
+//         array(
+//             'name' => 'Page Sidebar',
+//             'id' => 'page-sidebar',
+//         )
+//     )
+// }
+
+add_action('widgets-init', 'my-sidebars');
 
 // Custom SMTP mailing for Contact Form 7...
 
