@@ -1,13 +1,23 @@
 <?php
 
-// Load Bootstrap CSS
 
 function load_css(){
+
+// Load Bootstrap CSS
    wp_register_style('bootstrap',  get_template_directory_uri() . '/css/bootstrap.min.css', array(), false, 'all');
    wp_enqueue_style('bootstrap');
+
+
+// Load Custom CSS
+   wp_register_style('main', get_template_directory_uri() . '/css/main.css', array(), false, 'all');
+   wp_enqueue_style('main');
 }
 
 add_action('wp_enqueue_scripts' , 'load_css');
+
+
+
+
 
 
 
@@ -37,6 +47,6 @@ function custom_mailer($php_mail){
     $php_mail->IsSMTP();
 }
 
-add_action( 'phpmailer_init', 'custom_mailer');
+add_action('phpmailer_init', 'custom_mailer');
 
 ?>
