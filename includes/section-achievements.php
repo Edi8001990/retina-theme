@@ -10,13 +10,14 @@
         <?php  echo '<span class="achievement-paragraph">' . $output . '</span>'; ?>
 
         <?php get_template_part('includes/custom-posts/section' , 'achievements-block'); ?>
-
+       
 
         <!-- Custom CTA -->
-
+        
         <div class="cta-wrapper-blue">
+       
             <a class="btn" href="<?php the_field('cta_achievement'); ?>">Contact Us
-            <i class='fas fa-angle-right'></i>
+                <i class='fas fa-angle-right'></i>
         </a>
         
     </div>

@@ -1,3 +1,128 @@
+/* Features page */
+
+.features-block{
+    display: inline-flex;
+    justify-content: space-between;
+
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.features-block .row .col{
+    background-color: #0c4d92;
+    max-width: 180px;
+    min-width: 180px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    display: grid;
+    padding-bottom: 20px;
+}
+
+.col-green.active{
+    background-color: #5cb847 !important;
+}
+
+.features-block .row{
+    width:fit-content;
+}
+
+.features-block .row .col .feature-header{
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.feature-header.active{
+    text-align: left;
+}
+
+.test-text{
+    display: none;
+}
+
+.test-text.active{
+    color: white;
+    display: inline;
+}
+
+ .plus-toggle{
+    color: white;
+    background-color: #259de0;
+    border-radius: 50px;
+    display: flex;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plus-toggle.active{
+    display: none;
+}
+
+.close-toggle.active{
+    color: white;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: auto;
+    text-transform: rotate(45deg);
+    position: relative;
+    top:2px;
+    display: inline;
+}
+
+.close-toggle{
+    display: none;
+}
+
+.features-image-wrapper.active{
+    display: none;
+}
+
+.feature-description{
+    display: none;
+}
+
+.feature-description.active{
+    display: inline;
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 100;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.feature-page-url{
+   display:none;
+}
+
+.feature-page-url.active{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.feature-page-url:hover{
+    color:white;
+}
+
 /* Achievements page */
 
 .achievements-section{

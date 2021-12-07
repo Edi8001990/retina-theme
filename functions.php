@@ -29,6 +29,9 @@ function load_js(){
     wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrap');
 
+    wp_register_script('custom-js', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true);
+    wp_enqueue_script('custom-js');
+
 }
 
 add_action('wp_enqueue_scripts' , 'load_js');
@@ -94,7 +97,8 @@ function register_my_menus() {
 add_action('widgets-init', 'my-sidebars');
 
 
-// Custom Post Types
+// ------ Custom Post Types
+// Achievements
 function custom_post_type_achievements(){
 
     $args = array(
@@ -124,11 +128,6 @@ add_action('init', 'custom_post_type_achievements');
 
 function custom_post_taxonomy_achievements(){
     $args = array(
-        // 'labels' => array(
-        //     'name' => 'Achievements Type',
-        //     'singular_name' => 'Achievement Type',
-        // ),
-
         'public' => true,
         'hierarchical' => true,
     );
@@ -138,6 +137,44 @@ function custom_post_taxonomy_achievements(){
 
 add_action('init', 'custom_post_taxonomy_achievements');
 
+
+// Features
+function custom_post_type_features(){
+
+    $args = array(
+        
+        'labels' => array(
+            'name' => 'Features',
+            'singular_name' => 'Features',
+
+        ),
+
+        'hierarchical' => true,
+        'public' => true, 
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-forms',
+        'supports' => array('title', 'editor', 'custom-fields'),
+
+    );
+
+    register_post_type('features', $args);
+}
+
+add_action('init', 'custom_post_type_features');
+
+
+// Features category
+
+function custom_post_taxonomy_features(){
+    $args = array(
+        'public' => true,
+        'hierarchical' => true,
+    );
+
+    register_taxonomy( 'features', array('features'), $args);
+}
+
+add_action('init', 'custom_post_taxonomy_features');
 
 
 // Custom SMTP mailing for Contact Form 7...

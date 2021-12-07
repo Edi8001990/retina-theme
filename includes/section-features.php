@@ -1,0 +1,1 @@
+<?php get_template_part('includes/custom-posts/section' , 'features-block'); ?>

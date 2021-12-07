@@ -6,6 +6,8 @@
 
         
         <?php get_template_part('includes/section'  ,'head'); ?>
+            <br>
+        <?php get_template_part('includes/section'  ,'features'); ?>
         
         <?php get_template_part('includes/section'  ,'content'); ?>
         <?php get_template_part('includes/section'  ,'contact'); ?>
