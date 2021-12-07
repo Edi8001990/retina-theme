@@ -89,9 +89,54 @@ function register_my_menus() {
 
 // Register Sidebars
 
-
-
 add_action('widgets-init', 'my-sidebars');
+
+
+// Custom Post Types
+function custom_post_type_achievements(){
+
+    $args = array(
+        
+        'labels' => array(
+            'name' => 'Achievements',
+            'singular_name' => 'Achievements',
+
+        ),
+
+        'hierarchical' => true,
+        'public' => true, 
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-star-filled',
+        'supports' => array('title', 'editor', 'custom-fields'),
+
+    );
+
+    register_post_type('achievements', $args);
+}
+
+add_action('init', 'custom_post_type_achievements');
+
+
+
+// Achievemnts category
+
+function custom_post_taxonomy_achievements(){
+    $args = array(
+        // 'labels' => array(
+        //     'name' => 'Achievements Type',
+        //     'singular_name' => 'Achievement Type',
+        // ),
+
+        'public' => true,
+        'hierarchical' => true,
+    );
+
+    register_taxonomy( 'achievements', array('achievements'), $args);
+}
+
+add_action('init', 'custom_post_taxonomy_achievements');
+
+
 
 // Custom SMTP mailing for Contact Form 7...
 

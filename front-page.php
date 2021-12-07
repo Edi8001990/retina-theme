@@ -14,6 +14,9 @@
         <br>
 
         <?php get_template_part('includes/section'  ,'testimonial'); ?>
+
+
+        <?php get_template_part('includes/custom-posts/section' , 'achievements'); ?>
         
         
     </div>
