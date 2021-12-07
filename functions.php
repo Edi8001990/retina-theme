@@ -34,6 +34,8 @@ function load_js(){
 add_action('wp_enqueue_scripts' , 'load_js');
 
 
+
+
 // Load Font Awesome icons for the footer 
 
 function load_font_awesome(){

@@ -1,6 +1,6 @@
 <?php 
-$post   = get_page_by_title( 'Testimonial' );
-$output =  apply_filters( 'the_content', $post->post_content );
+        $post   = get_page_by_title( 'Testimonial' );
+        $output =  apply_filters( 'the_content', $post->post_content );
 ?>
 
 
