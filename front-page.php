@@ -16,7 +16,7 @@
         <?php get_template_part('includes/section'  ,'testimonial'); ?>
 
 
-        <?php get_template_part('includes/custom-posts/section' , 'achievements'); ?>
+        <?php get_template_part('includes/custom-posts/section' , 'achievements-block'); ?>
         
         
     </div>
