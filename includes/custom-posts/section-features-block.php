@@ -1,5 +1,3 @@
-This si from Features block
-
 <?php
     $args = array(  
         'post_type' => 'features',
