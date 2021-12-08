@@ -7,27 +7,20 @@
     </div>
 </div>
 
-<section>
-    <div class="container">
 
-        
-       
-            <br>
+    <div class="container">
         <?php get_template_part('includes/section'  ,'features'); ?>
-        
         <?php get_template_part('includes/section'  ,'content'); ?>
         <?php get_template_part('includes/section'  ,'contact'); ?>
-
-        <br>
-        <br>
-
+   </div>
+        
+   
         <?php get_template_part('includes/section'  ,'testimonial'); ?>
 
+    <div class="container">
         <?php get_template_part('includes/section'  ,'achievements'); ?>
-        
-        
-        
+   </div> 
     </div>
-</section>
+
 
 <?php get_footer();?>
