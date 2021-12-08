@@ -419,7 +419,174 @@
      padding-bottom: 50px;
  }
 
- 
+ /* Contact Corm Styling */
+
+ .contact-paragraph{
+    font-weight: 100;
+    font-size: 18px;
+ }
+
+ .contact-section h1{
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+    font-weight: 500;
+ }
+
+ .contact-paragraph p{
+    font-family: 'Readex Pro', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+
+ .contact-form-7{
+     /* max-width: 1200px; */
+     margin-left: auto;
+     margin-right: auto;
+     background-color: #e5e5e5;
+     padding: 40px 50px;
+     border-radius: 20px;
+    
+ }
+
+ .contact-form-7 h1{
+     text-align: center;
+     font-family: 'Readex Pro', sans-serif;
+     font-weight: 400;
+ }
+
+ .form-wrapper{
+     display: inline-grid;
+     grid-template-columns: auto auto;
+     grid-template-columns: 4fr 2fr;
+     align-items: center;
+ }
+
+ .contact-form-7 .form-wrapper 
+ .form-column:last-child{
+     margin-left: 30px;
+ }
+
+ .contact-form-7 .form-wrapper 
+ .form-column .inputs-row{
+     display: flex;
+     width: 100%;
+ }
+
+ .contact-form-7 .form-wrapper 
+ .form-column .inputs-row label{
+    margin: 10px 10px;
+ }
+.contact-form-7 .form-wrapper .form-column 
+ label span input{
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: unset;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    padding-left: 15px;
+  }
+
+
+  .education-level{
+      width: 100%;
+  }
+
+  .country-select{
+      width: 100%;
+  }
+
+.form-select{
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: unset;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.08);
+    padding-left: 15px;
+ }
+
+  .form-checkbox-title{
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .study-wish
+  .wpcf7-checkbox
+  .wpcf7-list-item{
+    display: flex;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .study-wish
+  .wpcf7-checkbox
+  .wpcf7-list-item
+  .wpcf7-list-item-label{
+      margin-left: 10px;
+      font-family: 'Readex Pro', sans-serif;
+      font-weight: 100;
+  }
+
+
+
+  .study-wish .wpcf7-checkbox .wpcf7-list-item
+  input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+  
+
+
+
+
+
+  .submit-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  
+.wpcf7-spinner{
+     display: none;
+ } 
+
+
+ /* .submit-wrapper{
+    background-color: #259de0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+ } */
+
+ .submit-wrapper{
+     width: fit-content;
+     margin-right: auto;
+     margin-left: auto;
+     position: relative;
+    top: 70px;
+ }
+
+ .submit-wrapper input{
+    padding: 20px 65px;
+    font-weight: 600;
+    background-color: #259de0;
+    border: unset;
+    border-radius: 10px;
+    color: white;
+}
 
 /* Footer styling */
 
