@@ -18,7 +18,7 @@
 
 
 
-<div class="top-menu-box">
+<div class="top-menu-box main-header-navigation">
     <div class="container">
         <div class="row">
             <!-- Custom logo -->
@@ -26,6 +26,23 @@
 
             <!-- Main Menu -->
                 <div class="col">  <?php wp_nav_menu( array( 'theme_location' => 'top-menu', 'menu_class' => 'nav')); ?></div>
+         </div>
+</div>
+</div>
+
+
+<div class="top-menu-box main-header-navigation-mobile">
+    <div class="container">
+        <div class="mobile-nav-row">
+            <!-- Custom logo -->
+                <div class="mobile-nav-block"> <?php  if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?>
+                <div class="trigger-icon">
+                    <i class="fa fa-bars burger-menu" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <!-- Main Menu -->
+                <div class="mobile-nav-block">  <?php wp_nav_menu( array( 'theme_location' => 'top-menu', 'menu_class' => 'nav')); ?></div>
          </div>
 </div>
 </div>

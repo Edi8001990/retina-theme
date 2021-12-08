@@ -1,0 +1,128 @@
+
+
+
+/* Movile disabled */
+
+@media screen and (min-width: 1401px) {
+
+    .main-header-navigation-mobile{
+        display: none;
+    }
+}
+
+/* Top Menu adjustments */
+
+@media screen and (max-width: 1400px) {
+
+    .main-header-navigation{
+        display: none;
+    }
+
+    .top-menu-box .container .row{
+        display: inline-grid;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .top-menu-box .container .row .col-4{
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-menu-box .container .row 
+    .col .menu-main-menu-header-container ul li {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .main-header-navigation{
+        display: none;
+    }
+
+    .main-header-navigation-mobile{
+        display: inline;  
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .main-header-navigation-mobile{
+        width: 100%;
+        display: inline-block;
+        padding-top: 0px;
+        background-color: black;
+        padding-bottom: 0px;
+    }
+
+    .main-header-navigation-mobile .container{
+        display: inline;  
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+
+    .mobile-nav-block{
+        text-align: center;
+    }
+
+    .mobile-nav-block
+    .menu-main-menu-header-container
+    ul{
+        display: grid;
+    }
+    
+    .mobile-nav-block
+    .menu-main-menu-header-container
+    ul li a{
+        width: 100%;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid #444;
+        color: white;
+        text-decoration: none;
+    }
+
+    .main-header-navigation-mobile .container
+    .mobile-nav-row .mobile-nav-block{
+        padding: 20px 0px 0px 0px;
+    }
+
+    .main-header-navigation-mobile
+    .container .mobile-nav-row .mobile-nav-block
+    .custom-logo-link .custom-logo{
+        width: 200px;
+        height: auto;
+    }
+
+    .main-header-navigation-mobile .container
+    .mobile-nav-row {
+        position: relative;
+    }
+
+    .trigger-icon{
+        color: white;
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .main-header-navigation-mobile 
+    .container .mobile-nav-row 
+    .mobile-nav-block 
+    .menu-main-menu-header-container{
+        display: none;
+    }
+
+    .main-header-navigation-mobile 
+    .container .mobile-nav-row 
+    .mobile-nav-block 
+    .menu-main-menu-header-container.trigerred{
+        display: inline;
+    }
+
+   
+
+
+}

@@ -14,6 +14,12 @@ jQuery(document).ready(function(){
             .find(".plus-toggle, .show-text, .close-toggle, .features-image-wrapper, .feature-description, .col-green, .feature-page-url, .feature-header")
             .removeClass('active');
     });
+
+// Trigger Mobile nenu 
+    jQuery(".trigger-icon").click(function(){
+        jQuery('.main-header-navigation-mobile .container .mobile-nav-row .mobile-nav-block .menu-main-menu-header-container')
+        .toggleClass('trigerred');
+    });
 });
 
 // Add boostrap class to select input in the form
