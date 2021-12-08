@@ -8,6 +8,8 @@ echo $output;
 ?>
 
 
+<section></section>
+
 <!-- Customizable top section CTA's -->
 
 <?php if( get_field('choose_industry_filter') ): ?>
@@ -18,3 +20,4 @@ echo $output;
 <?php if( get_field('choose_degree_filter') ): ?>
 	<a href="<?php the_field('choose_degree_filter'); ?>">Choose Degree</a>
 <?php endif; ?>
+

@@ -1,3 +1,49 @@
+/* Top navigation menu */
+
+.top-menu-box{
+    background-color: black;
+    padding: 20px 0px;
+}
+
+.top-menu-box .container .row {
+    align-items: center;
+}
+
+.top-menu-box .container .row .col
+.menu-main-menu-header-container{
+    position: relative;
+    top: 10px;
+}
+
+.top-menu-box .container .row .col
+.menu-main-menu-header-container ul li{
+    margin-right: 45px;
+    height: 30px; 
+    display: grid;
+}
+
+.top-menu-box .container .row .col
+.menu-main-menu-header-container ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+.top-menu-box .container .row .col
+.menu-main-menu-header-container ul li:hover{
+    border-bottom: 3px solid #259de0;
+}
+
+
+.top-menu-box .container .row .col
+.menu-main-menu-header-container ul li:hover a{
+    text-shadow: 1px 0px 0px #FFFFFF;
+}
+
+
+
+
 /* Features page */
 
 .features-block{
@@ -82,6 +128,7 @@
     text-transform: rotate(45deg);
     position: relative;
     top:2px;
+    left: 5px;
     display: inline;
 }
 

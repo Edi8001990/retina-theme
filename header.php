@@ -18,14 +18,19 @@
 
 <!-- Custom logo -->
 
-<?php
-    if ( function_exists( 'the_custom_logo' ) ) {
-        the_custom_logo();
-    }
-?>
+<div class="top-menu-box">
+    <div class="container">
+        <div class="row">
+                <div class="col-4"> <?php  if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo(); } ?></div>
+                <div class="col">  <?php wp_nav_menu( array( 'theme_location' => 'top-menu', 'menu_class' => 'nav')); ?></div>
+         </div>
+</div>
+
+</div>
+
 
 <!-- Main Menu -->
 
-<?php wp_nav_menu( array( 'theme_location' => 'top-menu' )); ?>
+
 
 </header>
