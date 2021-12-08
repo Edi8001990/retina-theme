@@ -32,6 +32,11 @@ function load_js(){
     wp_register_script('custom-js', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true);
     wp_enqueue_script('custom-js');
 
+    // wp_register_script('custom-js', get_template_directory_uri() . '/js/custom.js', 'jquery', false, true);
+    // wp_enqueue_script('custom-js');
+
+    
+
 }
 
 add_action('wp_enqueue_scripts' , 'load_js');

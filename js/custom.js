@@ -20,4 +20,11 @@ jQuery(document).ready(function(){
 jQuery(document).ready(function(){
     jQuery( ".country-select .wpcf7-form-control-wrap select" ).addClass("form-select"); 
     jQuery( ".education-level .wpcf7-form-control-wrap select" ).addClass("form-select"); 
+    
+    // Add Counter class to achievements values
+    jQuery( ".achievements-block .row .col h1 p" ).addClass("counter");
+    // Count Achievements Values
+    $('.counter').countUp();
 });
+
+

@@ -22,7 +22,7 @@
                     </div>
                     <div class="triangle-shape"></div>
 
-                <h1><?php the_excerpt() ; ?></h1>
+                <h1><?php  the_excerpt()  ; ?></h1>
                 <span> <?php the_title(); ?> </span> 
 
         </div>
